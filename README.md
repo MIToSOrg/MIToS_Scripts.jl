@@ -11,7 +11,7 @@
 * **BLMI.jl**: Computes corrected mutual information using BLOSUM62-based pseudocounts, as described in the MIToS publication (Zea et al., 2016).
 * **Conservation.jl**: Calculates Shannon entropy and Kullback-Leibler divergence for each column in a Multiple Sequence Alignment (MSA).
 * **DownloadPDB.jl**: Downloads gzipped files from the Protein Data Bank (PDB).
-* **Distances.jl**: Computes residue distances in a PDB file.
+* **Distances.jl**: Computes inter-residue distances in a PDB file.
 * **SplitStockholm.jl**: Splits a Stockholm file containing multiple alignments into separate compressed files for each MSA.
 * **AlignedColumns.jl**: Creates a Stockholm file with aligned columns from a Pfam Stockholm file, removing insertions, and saves the mapping of residue numbers in UniProt and the original MSA columns.
 * **PercentIdentity.jl**: Calculates the percentage identity between all sequences in an MSA and provides statistics such as mean, median, and minimum values.
