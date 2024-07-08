@@ -1,11 +1,10 @@
 #!/usr/bin/env julia
 
-using MIToS
-include(joinpath(pkgdir(MIToS), "scripts", "_setup_script.jl"))
+using MIToS_Scripts
+set_project_env()
 
 using CodecZlib
-using MIToS.Utils # get_n_words, check_file
-using ProgressMeter
+
 
 function parse_commandline()
     mitos_version = loadedversion(MIToS)

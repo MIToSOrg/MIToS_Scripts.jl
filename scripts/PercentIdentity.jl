@@ -1,10 +1,7 @@
 #!/usr/bin/env julia
 
-using MIToS
-include(joinpath(pkgdir(MIToS), "scripts", "_setup_script.jl"))
-
-using DelimitedFiles
-using Statistics
+using MIToS_Scripts
+set_project_env()
 
 Args = parse_commandline(
     # TO DO ----------------------------------------------------------------------
@@ -39,6 +36,7 @@ set_parallel(Args["parallel"])
     import MIToS_Scripts: script
 
     # TO DO ----------------------------------------------------------------------
+    using Statistics
     using MIToS.MSA
     using PairwiseListMatrices
     # ----------------------------------------------------------------------------

@@ -185,3 +185,13 @@ function set_parallel(parallel)
     end
     nothing
 end
+
+# Project
+# -------
+
+function set_project_env()
+    project_path = abspath(joinpath(@__DIR__, "..")) 
+    Pkg.activate(project_path, io=devnull)
+    Pkg.instantiate(io=devnull)
+    Pkg.resolve(io=devnull)
+end

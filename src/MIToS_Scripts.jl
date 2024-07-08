@@ -1,15 +1,16 @@
 module MIToS_Scripts
 
-using Dates
 using Pkg
-using ArgParse
 using CodecZlib
 using Reexport
 
-using MIToS.Utils # to use read_file
-
 @reexport using MIToS
+@reexport using MIToS.Utils # to use read_file, get_n_words, check_file
+@reexport using Dates
 @reexport using Distributed
+@reexport using ProgressMeter
+@reexport using ArgParse
+@reexport using DelimitedFiles
 
 export run_single_script,
     script,
@@ -19,7 +20,8 @@ export run_single_script,
     loadedversion,
     parse_commandline,
     set_parallel,
-    runscript
+    runscript,
+    set_project_env
 
 include("Scripts.jl")
 end

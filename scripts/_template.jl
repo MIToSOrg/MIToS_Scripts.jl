@@ -1,6 +1,7 @@
 #!/usr/bin/env julia
 
 using MIToS_Scripts
+set_project_env()
 
 Args = parse_commandline(
     # TO DO ----------------------------------------------------------------------
