@@ -1,1 +1,5 @@
-# See https://domluna.github.io/JuliaFormatter.jl/stable/ for a list of options
+margin = 92
+indent = 4
+format_docstrings = true
+indent_submodule = true
+yas_style_nesting = true
