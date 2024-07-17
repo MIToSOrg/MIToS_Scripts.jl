@@ -15,18 +15,14 @@ function parse_commandline()
     )
 
     @add_arg_table! s begin
-        """
-        file
-        """
+        "file"
         help = "Input file"
         required = true
         "--path", "-p"
         help = "Path for the output files [default: execution directory]"
         arg_type = String
         default = ""
-        """
-        --hideprogress
-        """
+        "--hideprogress"
         help = "Hide the progress bar"
         action = :store_true
     end

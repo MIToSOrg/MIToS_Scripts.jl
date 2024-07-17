@@ -1,7 +1,7 @@
 name = "MIToS_Scripts"
 uuid = "d2e61ca9-32c8-4558-a4be-bbb3dc108fad"
 authors = ["Diego Javier Zea <diegozea@gmail.com> and contributors"]
-version = "3.0.0"
+version = "3.0.3"
 
 [deps]
 ArgParse = "c7e460c6-2fb9-53a9-8c5b-16f535851c63"
