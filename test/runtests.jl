@@ -2,7 +2,7 @@ using MIToS_Scripts
 using MIToS.MSA, MIToS.PDB, MIToS.Utils, MIToS.Information
 using Test
 using Aqua
-using JET
+# using JET # Temporarily disabled JET linting due to an ambiguous `step_expr!` dispatch conflict with JuliaInterpreter
 
 @testset verbose = true "MIToS_Scripts.jl" begin
     @testset "Code quality (Aqua.jl)" begin
@@ -10,9 +10,11 @@ using JET
         Aqua.test_all(MIToS_Scripts, ambiguities = false, undefined_exports = false)
     end
     
+    #=
     @testset "Code linting (JET.jl)" begin
         JET.test_package(MIToS_Scripts; target_defined_modules = true)
     end
+    =#
 
     # Scripts
     @testset verbose = true "Scripts" begin
